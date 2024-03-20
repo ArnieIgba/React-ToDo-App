@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+--red: red;
+--purple: purple;
+--aliceblue: aliceblue;
+--moi: #d51b21;
+--lim: rgb(185, 238, 185);
+}
+
+body {
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background: linear-gradient(to right, rgb(9, 2, 2), rgb(8, 2, 2));
+font-family: 'Arial', sans-serif;
+}
+
+.App {
+    background: #440f2b;
+    border-radius: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    width: 450px;
+
+}
+
+.App h1{
+    color: aliceblue;
+    font-weight: bold;
+    background-image: linear-gradient(to right, var(--aliceblue), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.todo-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 20px;
+    
+}
+
+
+.todo-input {
+    padding: 20px;
+    font-size: 19px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 5px;
+    width: 70%;
+    height: 25px;
+    outline: none;
+    background-color:#CF9FFF;
+    color: black;
+}
+
+input::placeholder {
+    color:black;
+    
+}
+
+.todo-button{
+    padding: 0 10px;
+    font-size: 19px;
+    cursor: pointer;
+    width: 30%;
+    height: 45px;
+    border-radius: 8px;
+    border: 0;
+    color: aliceblue;
+    background: #d51b21;
+    transition: 0.3s;
+
+}
+
+
+.todo-button:hover{
+    background: #440f2b;
+    color: aliceblue;
+    font-weight: bold;
+    
+}
+
+
+
+.todo-row {
+    background-color: #464244;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.icons{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 20px;
+} 
+
+.delete-icon {
+    color: red;
+}
+
+.delete-icon:hover{
+    opacity: 0.6;
+}
+.edit-icon {
+    color: aqua;
+}
+.edit-icon:hover{
+    opacity: 0.8;
+}
